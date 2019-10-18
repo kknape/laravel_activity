@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('user', 'UsersController');
+
+Route::resource('users.snippets', 'UserSnippetsController');
